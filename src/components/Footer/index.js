@@ -4,9 +4,9 @@ import Github from "./Github";
 import Instagram from "./Instagram";
 import Gmail from "./Gmail";
 
-const LINKEDIN = "https://www.linkedin.com/in/sahil-kumar-a055b9181/";
-const INSTAGRAM = "https://instagram.com/sahillkumar_/ ";
-const GITHUB = "https://github.com/sahillkumar";
+const LINKEDIN = "https://www.linkedin.com/in/sahi11k";
+const INSTAGRAM = "https://instagram.com/sahi11k/ ";
+const GITHUB = "https://github.com/sahi11k";
 const GMAIL = "mailto:sahil511kumar@gmail.com";
 
 const Icon = ({ children, link }) => {
@@ -24,6 +24,9 @@ const Footer = () => {
     <footer className="footer">
       <div className="socialWrapper">
         <div className="socialIcons">
+          <Icon link={GMAIL}>
+            <Gmail />
+          </Icon>
           <Icon link={LINKEDIN}>
             <Linkedin />
           </Icon>
@@ -32,9 +35,6 @@ const Footer = () => {
           </Icon>
           <Icon link={INSTAGRAM}>
             <Instagram />
-          </Icon>
-          <Icon link={GMAIL}>
-            <Gmail />
           </Icon>
         </div>
       </div>

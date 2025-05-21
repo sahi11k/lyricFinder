@@ -1,6 +1,6 @@
 .header {
   text-align: center;
-  font-size: 1.35rem;
+  font-size: clamp(1.25rem, 3vw, 2.5rem);
   color: var(--secondary-color);
 }
 
@@ -22,7 +22,7 @@
 }
 
 .trackName {
-  font-size: 1rem;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
   font-weight: bold;
   transition-duration: 300ms;
 }
@@ -33,7 +33,7 @@
   align-items: center;
   gap: 4px;
   margin: 8px 0;
-  font-size: 0.8rem;
+  font-size: clamp(0.8rem, 2vw, 1rem);
   font-weight: 500;
 }
 
@@ -85,22 +85,9 @@
 }
 
 @media screen and (min-width: 768px) {
-  .header {
-    font-size: 2rem;
-  }
-
   .trackCardWrapper {
     width: 90%;
     gap: 32px;
-  }
-
-  .trackName {
-    font-size: 1.25rem;
-  }
-
-  .trackArtist,
-  .trackAlbum {
-    font-size: 1rem;
   }
 
   .trackCard .lyricsButton {
@@ -111,10 +98,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .header {
-    font-size: 2.5rem;
-  }
-
   .trackCardWrapper {
     gap: 40px;
   }

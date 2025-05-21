@@ -19,17 +19,17 @@
 }
 
 .lyricsTrackName {
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
 }
 
 .lyricsArtist {
   transition-duration: 500ms;
-  font-size: 0.9rem;
+  font-size: clamp(0.8rem, 2.5vw, 1.25rem);
   font-style: italic;
 }
 
 .lyrics {
-  font-size: 0.8rem;
+  font-size: clamp(0.8rem, 2.5vw, 1.25rem);
   line-height: 2;
   margin-top: 20px;
   white-space: pre-line;
@@ -42,7 +42,7 @@
   justify-content: center;
   align-items: center;
   gap: 16px;
-  font-size: 0.75rem;
+  font-size: clamp(0.75rem, 2.5vw, 1rem);
   font-weight: 400;
 }
 
@@ -59,39 +59,4 @@
 .lyricsLine.skeleton {
   height: 30px;
   margin: 8px 0;
-}
-
-@media screen and (min-width: 768px) {
-  .lyricsTrackName {
-    font-size: 2rem;
-  }
-
-  .lyricsArtist,
-  .lyrics {
-    font-size: 1rem;
-  }
-
-  .copyRight {
-    font-size: 0.9rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .lyricsTrackName {
-    font-size: 2.5rem;
-  }
-
-  .lyricsArtist,
-  .lyrics {
-    font-size: 1.15rem;
-  }
-
-  .noLyrics {
-    font-size: 1rem;
-
-    h1 {
-      font-size: 2.5rem;
-      margin: 0;
-    }
-  }
 }
