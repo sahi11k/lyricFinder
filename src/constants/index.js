@@ -17,4 +17,4 @@ export const ACTION_TYPES = {
 export const UP = "up";
 export const DOWN = "down";
 
-export const BASE_URL = "https://lyric-finder-backend.onrender.com/";
+export const BASE_URL = process.env.REACT_APP_API_URL;
